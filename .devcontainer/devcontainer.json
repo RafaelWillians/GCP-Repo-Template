@@ -1,0 +1,23 @@
+{
+	"name": "Codespace Main",		
+	"dockerFile": "Dockerfile",
+	"postCreateCommand": "chmod +x gcloud-login.sh",
+	"features": {
+		"ghcr.io/devcontainers/features/github-cli:1": {}
+	},	
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "bash"
+			},						
+			"extensions": [
+			"mhutchie.git-graph",
+			"phil294.git-log--graph",			
+			"github.vscode-github-actions",
+			"GitHub.copilot",
+			"GitHub.copilot-chat",
+			"bierner.github-markdown-preview"
+		]
+	  }
+	}
+  }
